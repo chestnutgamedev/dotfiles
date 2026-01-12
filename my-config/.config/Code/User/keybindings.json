@@ -1,0 +1,253 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+k",
+    "command": "-extension.vim_ctrl+k",
+    "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-extension.vim_ctrl+j",
+    "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-extension.vim_ctrl+p",
+    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-extension.vim_ctrl+w",
+    "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-extension.vim_ctrl+d",
+    "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-extension.vim_ctrl+b",
+    "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  // Explorer
+  {
+    "key": "space e",
+    "command": "workbench.action.focusSideBar",
+    "when": "(vim.mode == 'Normal' || inWelcome) && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space e",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "f",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  // editorHover
+  {
+    "key": "h",
+    "command": "editor.action.scrollLeftHover",
+    "when": "editorHover"
+  },
+  {
+    "key": "j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "l",
+    "command": "editor.action.scrollRightHover",
+    "when": "editorHoverFocused"
+  },
+  // QuickOpen
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.togglePanel",
+    "when": "editorFocus && !suggestWidgetMultipleSuggestions"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "extension.vim_ctrl+j"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  // Editor
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "tab",
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "shift+tab",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "shift+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "vim.mode != 'Insert' && editorTextFocus"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "vim.mode != 'Insert' && editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "editor.action.joinLines",
+    "when": "vim.mode != 'Insert' && editorTextFocus"
+  },
+  {
+    "key": "capslock",
+    "command": "extension.vim_escape",
+    "when": "vim.mode == 'Insert' && editorTextFocus"
+  },
+  {
+    "key": "space c s",
+    "command": "workbench.action.gotoSymbol",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+  },
+  // Terminal Focus
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.action.terminal.focusAtIndex1",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+2",
+    "command": "workbench.action.terminal.focusAtIndex2",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.action.terminal.focusAtIndex3",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+4",
+    "command": "workbench.action.terminal.focusAtIndex4",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "-breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+  },
+  // Snippet
+  {
+    "key": "space c l",
+    "when": "vim.mode == 'Normal' && editorTextFocus",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "editor.action.insertSnippet",
+          "args": {
+            "snippet": "console.log(\"${TM_SELECTED_TEXT}$1\")$2;"
+          }
+        },
+        {
+          "command": "extension.vim_insert"
+        }
+      ]
+    }
+  }
+]

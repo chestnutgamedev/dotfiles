@@ -1,0 +1,156 @@
+{
+  // Editor
+  "editor.fontFamily": "Inconsolata, K2D",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 20,
+  "editor.lineHeight": 23,
+  "editor.fontWeight": 400,
+  "editor.stickyScroll.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "none",
+  "editor.tabSize": 2,
+  "editor.cursorSurroundingLines": 6,
+  "json.schemas": [],
+  // Terminal
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": 200,
+  "terminal.integrated.lineHeight": 1.2,
+  "editor.minimap.enabled": false,
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  // Zen mode
+  "zenMode.hideLineNumbers": false,
+  // Vim
+  "editor.lineNumbers": "relative",
+  "vim.smartRelativeLine": true,
+  "vim.handleKeys": {
+    "<C-d>": false, // Duplicate word on VScode
+    "<C-s>": false, // Save on VScode
+    "<C-f>": false, // Find on VScode
+    "<C-p>": false, // Search file on VScode
+    "<C-n>": false, // create new file on VScode
+    "<C-j>": false, // Open Terminal
+    "<C-l>": false, // go to symbol
+    "<C-t>": false // Jump to next word in search
+  },
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 250,
+  "vim.foldfix": true, // Skip folding line when move cursor
+  "workbench.editor.decorations.badges": false, // hide status git on tab
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.labelFormat": "default",
+  "workbench.tree.indent": 14,
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#00ff00"
+  },
+  //Gutter staff
+  "editor.glyphMargin": false,
+  // "editor.folding": false,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "workbench.panel.opensMaximized": "always",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "extensions.ignoreRecommendations": true,
+  // "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "files.exclude": {
+    "**/.dev": true
+  },
+  "git.enableSmartCommit": true,
+  "files.autoSave": "afterDelay",
+  "vim.commandLineModeKeyBindingsNonRecursive": [],
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "relative", // make typescript import module from relative path
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.openRepositoryInParentFolders": "never",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescriptreact": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "window.zoomPerWindow": false,
+  "window.zoomLevel": 1,
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpen", // disable shortcut on termianl
+    "-workbench.action.terminal.focusFind" // disable searching shortcut on terminal
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "dotnet.server.startTimeout": 60000,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced"
+  },
+  "workbench.settings.applyToAllProfiles": [],
+  "html.autoClosingTags": true,
+  "breadcrumbs.enabled": false,
+  "godotTools.editorPath.godot4": "/usr/local/godot/Godot_v4.5.1-stable_linux.x86_64",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "chat.viewSessions.orientation": "stacked",
+  "rust-analyzer.lens.enable": false
+}
