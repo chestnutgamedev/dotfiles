@@ -152,5 +152,6 @@
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "chat.viewSessions.orientation": "stacked",
-  "rust-analyzer.lens.enable": false
+  "rust-analyzer.lens.enable": false,
+  "rust-analyzer.completion.autoimport.enable": true,
 }
