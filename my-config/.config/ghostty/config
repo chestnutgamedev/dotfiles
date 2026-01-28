@@ -1,0 +1,10 @@
+font-size = 15
+background-opacity = 0.9
+background-blur = true
+window-width = 80
+window-height = 25
+
+keybind = ctrl+backspace=text:\x1b\x7f
+
+env = ZDOTDIR=/home/chestnut
+confirm-close-surface = false
